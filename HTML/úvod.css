@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.story {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.story-content {
+  position: relative;
+  background-color: coral;
+  padding: 60px 20px; 
+}
+
+.story-content::before {
+  content: "";
+  position: absolute;
+  top: 2px;               
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: rotate(0.7deg);
+  transform-origin: center center;
+}
+
+.story-content::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+
